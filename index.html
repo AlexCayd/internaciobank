@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InternacioBank</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header class="barra">
+        <div class="barra__contenedor">
+            <h1 class="barra__titulo">InternacioBank</h1>
+            <nav class="navegacion">
+                <a href="#quienesomos" class="navegacion__enlace">¿Quiénes Somos?</a>
+                <a href="#convertidor" class="navegacion__enlace">Convertidor</a>
+                <a href="#descargas" class="navegacion__enlace">Descargas</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="hero__contenedor">
+            <h2 class="hero__titulo">InternacioBank</h2>
+            <p class="hero__contenido">El convertidor más confiable de las divisas del mundo. Ingresa la cantidad en una de las divisas y en unos pocos segundos mira el resultado convertido a la divisa que prefieras</p>
+        </div>
+    </div>
+
+    <section class="nosotros contenedor" id="quienesomos">
+        <h2 class="titulo">¿Quiénes Somos?</h2>
+        <div class="nosotros__grid">
+            <div class="nosotros__texto">
+                <p class="nosotros__contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, iusto ex. Odit quasi blanditiis commodi tempore illum omnis, molestiae repudiandae, maiores amet dolorum, excepturi quam hic. Quisquam iusto amet sit anim</p>
+                <p class="nosotros__contenido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae eveniet iste alias minima amet, aut voluptatem, porro aliquam ea dolores dolore nihil quae eum dolor, omnis consectetur reiciendis debitis unde atque eaque culpa corrupti. Laborum minus repudiandae rem</p>
+            </div>
+
+            <img src="img/divisas.jpg" alt="Divisas" class="nosotros__imagen">
+        </div>
+
+        <div class="nosotros__caracteristicas">
+            <div class="nosotros__caracteristica">
+                <img src="img/moviles.svg" alt="Caracteristica">
+                <h2 class="nosotros__caracteristica-texto">Transferencias Seguras</h2>
+            </div>
+
+            <div class="nosotros__caracteristica">
+                <img src="img/pagos.svg" alt="Caracteristica">
+                <h2 class="nosotros__caracteristica-texto">Pagos Móviles</h2>
+            </div>
+            
+            <div class="nosotros__caracteristica">
+                <img src="img/estadisticas.svg" alt="Caracteristica">
+                <h2 class="nosotros__caracteristica-texto">Estadísticas en Tiempo Real</h2>
+            </div>
+        </div>
+    </section>
+
+    <main class="convertidor" id="convertidor">
+        <div class="contenedor">
+            <h2 class="titulo">Convertidor de Divisas</h2>
+            <form class="cotizador" id="cotizador">
+                <legend class="cotizador__leyenda">Ingresa la cantidad en pesos mexicanos y selecciona una divisa</legend>
+                <div class="cotizador__contenedor">
+                    <div class="cotizador__campo">
+                        <label for="monedas" class="cotizador__label">Pesos (MXN): </label>
+                        <input type="number" id="monto">
+                    </div>
+
+                    <div class="cotizador__campo">
+                        <label for="divisas" class="cotizador__label">Divisa:</label>
+                        <select id="divisas">
+                            <option value="" selected disabled>-- Seleccionar --</option>
+                            <option value="1">Dólares (USD)</option>
+                            <option value="2">Euros (EUR)</option>
+                            <option value="3">Libra Esterlina (GBP)</option>
+                        </select>
+                    </div>
+
+                </div>
+                
+                <div id="cargando" class="hidden">
+                    <div class="spinner">
+                      <div class="rect1"></div>
+                      <div class="rect2"></div>
+                      <div class="rect3"></div>
+                      <div class="rect4"></div>
+                      <div class="rect5"></div>
+                    </div>
+                </div>
+
+                <div class="resultado" id="resultado"></div>
+                
+                <div class="cotizador__csubmit">
+                    <input type="submit" value="Convertir" class="cotizador__submit">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <section class="descargas">
+        <div class="contenedor">
+            <h2 class="titulo" id="descargas">Descarga la App</h2>
+            <div class="descargas__contenedor">
+                <img src="img/tienda-android.svg" alt="Tienda">
+                <img src="img/tienda-apple.svg" alt="Tienda">
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div class="contenedor">
+            <h2 class="titulo">Utiliza InternacioBank</h2>
+        </div>
+        <div class="galeria__contenedor">
+            <img src="img/galeria4.png" alt="Galería">
+            <img src="img/galeria5.png" alt="Galería">
+            <img src="img/galeria6.png" alt="Galería">
+            <img src="img/galeria7.png" alt="Galería">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer__contenido">Internaciobank ©. Sitio realizado por Alex Oliva. Todos los derechos reservados 2022.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
